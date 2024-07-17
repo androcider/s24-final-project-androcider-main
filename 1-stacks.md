@@ -22,7 +22,7 @@ Stacks are used to implement the undo functionality in applications. Each action
 5. #### Language Parsing and Syntax Checking
 Compilers and interpreters use stacks to parse and check the syntax of programming languages. For example, matching parentheses and braces in code can be efficiently checked using a stack.
 
-6.#### Navigating Browser History
+6. #### Navigating Browser History
 Stacks are used to manage browser history. Each visited page is pushed onto a stack. The back button pops the current page from the stack and navigates to the previous page.
 
 7. #### Reversing Data

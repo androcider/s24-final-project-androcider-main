@@ -18,7 +18,7 @@ Efficient Use: Nodes are created as needed, which can lead to more efficient use
 4. #### Implementation of Other Data Structures
 Foundational Structure: Linked lists serve as the foundation for many other data structures, such as stacks, queues, and more complex structures like graphs and hash tables.
 
-5.####  Simpler Memory Management
+5. ####  Simpler Memory Management
 No Need for Resizing: Since linked lists do not require resizing (as arrays do when they grow), they avoid the overhead associated with copying elements to a new array.
 
 6. #### Use Cases
