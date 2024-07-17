@@ -175,3 +175,5 @@ Write a program that will be able to shuffle a playlist as a linked list.
 After you have completed the program, compare it against the solution here:
 
 [Solution](2-linkedLists-solution.cs)
+
+[Return to home page](0-welcome.md)

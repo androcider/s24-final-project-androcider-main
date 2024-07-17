@@ -203,3 +203,5 @@ After you have completed the program, compare it against the solution here:
 
 [Solution](1-stacks-solution.cs)
 
+[Return to home page](0-welcome.md)
+
