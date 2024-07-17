@@ -7,25 +7,25 @@
 
 Stacks in C# are used to solve a variety of programming problems that require a specific order of operations. The Last-In-First-Out (LIFO) principle makes stacks particularly useful for certain scenarios. Here are some common purposes and use cases for stacks in C#:
 
-1. Function Call Management (Recursion)
+1. #### Function Call Management (Recursion)
 Stacks are used to manage function calls, particularly in recursive algorithms. Each time a function calls another function, the current function's state (local variables, return address) is pushed onto the stack. When the called function completes, its state is popped from the stack, and the execution resumes from where it left off.
 
-2. Expression Evaluation
+2. #### Expression Evaluation
 Stacks are used in parsing and evaluating expressions, particularly in converting infix expressions (e.g., A + B * C) to postfix expressions (e.g., A B C * +) and then evaluating them.
 
-3. Backtracking Algorithms
+3. #### Backtracking Algorithms
 In algorithms that require exploring multiple possibilities (such as maze solving, depth-first search in graphs), stacks are used to keep track of the current state and backtrack when needed.
 
-4. Undo Mechanism in Applications
+4. #### Undo Mechanism in Applications
 Stacks are used to implement the undo functionality in applications. Each action performed by the user is pushed onto a stack. To undo an action, the application pops the top action from the stack and reverses it.
 
-5. Language Parsing and Syntax Checking
+5. #### Language Parsing and Syntax Checking
 Compilers and interpreters use stacks to parse and check the syntax of programming languages. For example, matching parentheses and braces in code can be efficiently checked using a stack.
 
-6. Navigating Browser History
+6.#### Navigating Browser History
 Stacks are used to manage browser history. Each visited page is pushed onto a stack. The back button pops the current page from the stack and navigates to the previous page.
 
-7. Reversing Data
+7. #### Reversing Data
 Stacks can be used to reverse data. For example, reversing a string can be done by pushing each character onto a stack and then popping them in reverse order.
 ## Methods
 

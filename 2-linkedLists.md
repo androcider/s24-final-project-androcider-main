@@ -5,18 +5,23 @@
 ## Purpose
 Linked lists are a fundamental data structure that provide a flexible way to store and manage a collection of elements. Here are some of the primary purposes and benefits of using linked lists:
 
-1. Dynamic Size
+1. #### Dynamic Size
 Flexibility: Unlike arrays, which have a fixed size, linked lists can grow and shrink dynamically. This makes them ideal for situations where the number of elements is not known in advance or may change frequently.
-2. Efficient Insertions and Deletions
+
+2. #### Efficient Insertions and Deletions
 Fast Modifications: Linked lists are efficient for scenarios where elements are frequently added or removed from the middle of the list.
-3. Memory Utilization
+
+3. #### Memory Utilization
 Non-contiguous Storage: Linked lists use non-contiguous memory allocation, which means they can utilize scattered memory blocks. This can be advantageous when memory is fragmented.
 Efficient Use: Nodes are created as needed, which can lead to more efficient use of memory in certain situations.
-4. Implementation of Other Data Structures
+
+4. #### Implementation of Other Data Structures
 Foundational Structure: Linked lists serve as the foundation for many other data structures, such as stacks, queues, and more complex structures like graphs and hash tables.
-5. Simpler Memory Management
+
+5.####  Simpler Memory Management
 No Need for Resizing: Since linked lists do not require resizing (as arrays do when they grow), they avoid the overhead associated with copying elements to a new array.
-6. Use Cases
+
+6. #### Use Cases
 Real-World Applications: Linked lists are used in a variety of real-world applications. For example, they can be used in implementing adjacency lists for graph representations, in the chaining technique for handling hash collisions, and in managing free lists in dynamic memory allocation (e.g., garbage collectors).
 ## Methods
 ### Add(T data)
