@@ -293,10 +293,92 @@ private T FindMaxRec(Node<T> root)
 |FindMin()|	O(log n)|	O(n)|
 |FindMax()|	O(log n)|	O(n)|
 ## Example Problem
+In the example below we will create a binary search tree that will store songs based on their titles.
 
+```csharp
+public class Song
+{
+    public string Title { get; set; }
+    public string Artist { get; set; }
+    public string Album { get; set; }
+
+    public Song(string title, string artist, string album)
+    {
+        Title = title;
+        Artist = artist;
+        Album = album;
+    }
+}
+
+public class SongBinarySearchTree
+{
+    private Node<Song> root;
+
+    public SongBinarySearchTree()
+    {
+        root = null;
+    }
+
+    public void Insert(Song song)
+    {
+        root = InsertRec(root, song);
+    }
+
+    private Node<Song> InsertRec(Node<Song> root, Song song)
+    {
+        if (root == null)
+        {
+            root = new Node<Song>(song);
+            return root;
+        }
+
+        if (string.Compare(song.Title, root.Data.Title) < 0)
+        {
+            root.Left = InsertRec(root.Left, song);
+        }
+        else if (string.Compare(song.Title, root.Data.Title) > 0)
+        {
+            root.Right = InsertRec(root.Right, song);
+        }
+
+        return root;
+    }
+
+    public Song Search(string title)
+    {
+        return SearchRec(root, title)?.Data;
+    }
+
+    private Node<Song> SearchRec(Node<Song> root, string title)
+    {
+        if (root == null || root.Data.Title.Equals(title, StringComparison.OrdinalIgnoreCase))
+        {
+            return root;
+        }
+
+        if (string.Compare(title, root.Data.Title) < 0)
+        {
+            return SearchRec(root.Left, title);
+        }
+        else
+        {
+            return SearchRec(root.Right, title);
+        }
+    }
+}
+
+// Usage
+var songTree = new SongBinarySearchTree();
+songTree.Insert(new Song("Shape of You", "Ed Sheeran", "Divide"));
+songTree.Insert(new Song("Blinding Lights", "The Weeknd", "After Hours"));
+
+var searchResult = songTree.Search("Shape of You");
+Console.WriteLine(searchResult != null ? $"Found: {searchResult.Title} by {searchResult.Artist}" : "Song not found");
+```
 ## Problem to Solve
+Write a program similar to the example problem that will store and search for songs by artist
 
-
+After you have completed the program, compare it against the solution here:
 
 
 [Return to home page](0-welcome.md)
